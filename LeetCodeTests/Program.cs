@@ -6,18 +6,25 @@ namespace LeetCodeTests
     {
         static void Main(string[] args)
         {
-            var sample = new int[] { 2, 1, 3, 7, 11, 15};
-            int target = 4;
+            //var sample = new int[] { 2, 1, 3, 7, 11, 15};
 
-            int[] x = TwoSums(sample, target);
+            var sample = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 
-            
+            ArrayStuff arrayStuff = new ArrayStuff();
+            arrayStuff.Rotate(sample, 3);
 
-            foreach (var item in x)
-            {
-                Console.Write(item);
-            }
-            
+                
+                //int target = 4;
+
+            //int[] x = TwoSums(sample, target);
+
+
+
+            //foreach (var item in x)
+            //{
+            //    Console.Write(item);
+            //}
+
             //Console.WriteLine(IsGood(sample));
 
         }
