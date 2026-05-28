@@ -10,8 +10,38 @@ namespace LeetCodeTests
     internal class ArrayStuff
     {
 
+        public static int solution(int[] nums)
+        {
+            
+            //nums.OrderBy(x=> x).ToList().ForEach(x => Console.WriteLine(x));
+
+            var dict = new Dictionary<int, int>();
+
+            foreach (var i in nums)
+            {
+                if (dict.ContainsKey(i))
+                    dict[i]++;
+                else
+                    dict[i] = 1;
+    
+            }
+
+
+
+            foreach(var item in dict.Keys)
+            {
+                Console.WriteLine(dict[item]);
+            }
+
+            return 180;
+        }
+
         public static int MinDeletions(string s)
         {
+            if (char.IsDigit (s[0]))
+                Console.WriteLine("First character is a digit.");
+
+
             int[] freq = new int[26];
            foreach (char c in s)
                freq[c - 'a']++;
