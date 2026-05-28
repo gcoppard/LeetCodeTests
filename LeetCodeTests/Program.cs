@@ -10,11 +10,19 @@ namespace LeetCodeTests
 
             var sample = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 
-            ArrayStuff arrayStuff = new ArrayStuff();
-            arrayStuff.Rotate(sample, 3);
+            //ArrayStuff arrayStuff = new ArrayStuff();
+            //arrayStuff.Rotate(sample, 3);
+            //ArrayStuff.deleteUniqueStrings("aaaabbbb");
 
-                
-                //int target = 4;
+            //int x = ArrayStuff.MinDeletions("example");
+            int x = ArrayStuff.deleteUniqueStrings("example");
+            Console.WriteLine(x);
+
+            //int x = Recursion.findFactorialResult(5);
+            //int x = Recursion.fibonacci(8);
+            //Console.WriteLine(x);
+
+            //int target = 4;
 
             //int[] x = TwoSums(sample, target);
 
