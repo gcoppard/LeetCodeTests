@@ -22,6 +22,20 @@ namespace LeetCodeTests
                 return 1;
             return fibonacci(n - 1) + fibonacci(n - 2);
         }
+        
+        static Dictionary<int, int> memo = new Dictionary<int, int>();
+        public static int Fib(int n)
+        {
+            // dynamic programming example
+            if (n <= 1)
+                return n;
+
+            if (memo.ContainsKey(n))
+                return memo[n];
+
+            memo[n] = Fib(n - 1) + Fib(n - 2);
+            return memo[n];
+        }
 
         public string reverseString(string s)
         {
@@ -29,5 +43,14 @@ namespace LeetCodeTests
                 return s;
             return s.Last() + reverseString(s.Substring(0, s.Length - 1));
         }
+
+        public static string reverseString2(string s)
+        {
+            if (s.Length == 0)
+                return s;
+           
+            return s[s.Length- 1] + reverseString2(s.Substring(0,s.Length-1));
+        }
+
     }
 }
