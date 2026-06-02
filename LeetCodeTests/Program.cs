@@ -14,15 +14,21 @@ namespace LeetCodeTests
             //arrayStuff.Rotate(sample, 3);
             //ArrayStuff.deleteUniqueStrings("aaaabbbb");
 
-            int x = ArrayStuff.MinDeletions("2example");
+            //int x = ArrayStuff.MinDeletions("2example");
             //int x = ArrayStuff.deleteUniqueStrings("example");
             // int x = ArrayStuff.solution(sample);
             //Console.WriteLine(x);
 
             //int x = Recursion.findFactorialResult(5);
-// int x = Recursion.fibonacci(10);
+            int x = Recursion.fibonacci(10);
             Console.WriteLine(x);
+            int z = Recursion.Fib(10);
+            Console.WriteLine(z);
 
+
+            //string s = "Gary";
+            //Console.WriteLine(s.Substring(1));
+            //string tmp = Recursion.reverseString2(s);
             //int target = 4;
 
             //int[] x = TwoSums(sample, target);
