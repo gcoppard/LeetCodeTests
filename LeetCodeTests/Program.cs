@@ -20,10 +20,11 @@ namespace LeetCodeTests
             //Console.WriteLine(x);
 
             //int x = Recursion.findFactorialResult(5);
-            int x = Recursion.fibonacci(10);
-            Console.WriteLine(x);
-            int z = Recursion.Fib(10);
-            Console.WriteLine(z);
+            //int x = Recursion.fibonacci(10);
+            //Console.WriteLine(x);
+            //int z = Recursion.Fib(10);
+            //Console.WriteLine(z);
+            Recursion.Permute("abc", "");
 
 
             //string s = "Gary";
