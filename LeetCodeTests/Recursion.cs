@@ -52,5 +52,25 @@ namespace LeetCodeTests
             return s[s.Length- 1] + reverseString2(s.Substring(0,s.Length-1));
         }
 
+        public static void Permute(string remaining, string current)
+        {
+            // Base case: no characters left
+            if (remaining.Length == 0)
+            {
+                Console.WriteLine(current);
+                return;
+            }
+
+            // Choose each character in turn
+            for (int i = 0; i < remaining.Length; i++)
+            {
+                char chosen = remaining[i];
+                string rest = remaining.Substring(0, i) +
+                              remaining.Substring(i + 1);
+
+                Permute(rest, current + chosen);
+            }
+        }
+
     }
 }
