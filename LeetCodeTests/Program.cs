@@ -26,6 +26,8 @@ namespace LeetCodeTests
             //Console.WriteLine(z);
             Recursion.Permute("abc", "");
 
+            ThreadStuff.TestTask();
+
 
             //string s = "Gary";
             //Console.WriteLine(s.Substring(1));
