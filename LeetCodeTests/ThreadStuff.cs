@@ -15,5 +15,7 @@ namespace LeetCodeTests
             Task<string> t = Task<string>.Factory.StartNew(() => { Thread.Sleep(2000);  return myMessage;  });
             Console.WriteLine(t.Result);
         }
+
+
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LeetCodeTests
 {
     internal class Recursion
-    {
+    {        
         public static int findFactorialResult(int n)
         {
             if (n == 0)

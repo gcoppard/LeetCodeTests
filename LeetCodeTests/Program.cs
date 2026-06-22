@@ -24,10 +24,12 @@ namespace LeetCodeTests
             //Console.WriteLine(x);
             //int z = Recursion.Fib(10);
             //Console.WriteLine(z);
-            Recursion.Permute("abc", "");
+            //Recursion.Permute("abc", "");
 
-            ThreadStuff.TestTask();
+            //ThreadStuff.TestTask();
 
+            ListTests listTests = new ListTests();
+            listTests.CallIt();
 
             //string s = "Gary";
             //Console.WriteLine(s.Substring(1));
